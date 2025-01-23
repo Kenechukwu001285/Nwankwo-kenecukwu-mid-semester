@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page" class="container">
+        <h2>Signin</h2>
+        <input type="text" id="login-username" placeholder="Username" class="form-input">
+        <input type="password" id="login-password" placeholder="Password" class="form-input">
+        <button onclick="handleLogin()" class="form-button">Login</button>
+        <p onclick="toggleForm()" class="link">No account? Sign up here</p>
+        <p onclick="guestView()" class="link">View Products</p>
+    </div>
+
+    <div id="signup-page" class="container hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" class="form-input">
+        <input type="password" id="signup-password" placeholder="Password" class="form-input">
+        <button onclick="handleSignUp()" class="form-button">Sign Up</button>
+        <p onclick="toggleForm()" class="link">Already have an account? Login here</p>
+    </div>
+
+    <div id="product-page" class="container hidden">
+        <h2>Signup Product</h2>
+        <input type="text" id="product-name" placeholder="Product Name" class="form-input">
+        <input type="number" id="product-price" placeholder="Price" class="form-input">
+        <input type="number" id="product-quantity" placeholder="Quantity" class="form-input">
+        <input type="date" id="product-expiry" class="form-input">
+        <button onclick="addProduct()" class="form-button">Add Product</button>
+        <button onclick="viewProducts()" class="form-button">View Products</button>
+    </div>
+
+    <div id="view-products-page" class="container hidden">
+        <h2>All Products</h2>
+        <ul id="product-list"></ul>
+        <button onclick="goBack()" class="form-button">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

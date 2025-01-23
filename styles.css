@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #121213;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.form-button {
+    width: 95%;
+    padding: 10px;
+    background: #08d475;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-button:hover {
+    background: #09d4c3;
+}
+
+/* Links */
+.link {
+    color: #185e63;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+/* Product List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.product-item {
+    font-size: 14px;
+    color: #333;
+}
+
+.product-item strong {
+    color: #e98b11;
+}
+
+/* Additional Styling */
+button:focus, input:focus {
+    outline: none;
+}
